@@ -1,0 +1,481 @@
+html {
+    font-size: 100.01%;
+    -webkit-font-smoothing: antialiased;
+    font-smooth: always;
+}
+/*
+ol, ul {
+    padding-left: 40px;
+    margin: 10px 0;
+}
+
+html, div, span, applet, object, iframe, a, abbr, acronym, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, li, ol, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+    ol ul, ul ol, ul ul, ol ol {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    ul ul, ol ul {
+        list-style-type: circle;
+    }
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.navmenu li {
+    float: left;
+    color: #4d4d4d;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, li, tr, td, th, dd, dt {
+    font-family: "Segoe UI",Arial,Sans-Serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #111;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.navmenu {
+    background: #fff;
+    color: #4d4d4d;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: 25px;
+}
+
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+div.navbar {
+    white-space: nowrap;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, li, tr, td, th, dd, dt {
+    font-family: "Segoe UI",Arial,Sans-Serif;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #111;
+}
+*/
+
+.article h2{
+    color:#f90;/*orange*/
+}
+
+a:visited {
+    color: #800080;/*magenta*/
+}
+
+.color_blue {
+    color: #005782;/*blue*/
+}
+/*
+    ============================================================
+    left & right containers width
+    ============================================================
+*/
+.left_side_container {
+    width: 10%;
+}
+
+.right_side_container {
+    width: 10%;
+}
+/*
+    ============================================================
+    top navbar customizations
+    ============================================================
+*/
+.page_title {
+    color: Black;
+    background-color: transparent;
+    font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+    padding: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 00px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.global_menu_navbar {
+    color: Black;
+    background-color: transparent;
+    font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+}
+    .global_menu_navbar a:link {
+        color: rgba(0,0,0,0.6) !important;
+        background-color: transparent;
+        font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 14px;
+    }
+
+    .global_menu_navbar a:visited {
+        color: #808080 !important;
+    }
+
+    .global_menu_navbar a:hover {
+        background-color: #f90 !important; /*orange*/
+        color: #fff !important; /*white*/
+        border: 1px solid gray !important;
+        border-bottom: 5px solid #808080 !important;
+    }
+    .global_menu_navbar li.active a /*, li.nav-item.active*/ {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        color: #005782 !important; /*white*/
+        border-bottom: 5px solid #f90 !important;
+    }
+
+.support_menu_navbar {
+    color: Black;
+    background-color: transparent;
+    font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+}
+    .support_menu_navbar a:visited {
+        color: #800080 !important;
+    }
+
+    .support_menu_navbar a:link {
+        color: #005782 !important;
+        background-color: transparent;
+        font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    .support_menu_navbar a:hover {
+        background-color: #f90 !important; /*orange*/
+        color: #fff !important; /*white*/
+        border: 1px solid gray !important;
+        border-bottom: 5px solid #808080 !important;
+    }
+
+    .support_menu_navbar li.active a /*, li.nav-item.active*/ {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        color: #005782 !important; /*white*/
+        border-bottom: 5px solid #f90 !important;
+    }
+.subscriber_menu_navbar {
+    color: Black;
+    background-color: transparent;
+    font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+    .subscriber_menu_navbar a:visited {
+        color: #800080 !important;
+    }
+
+    .subscriber_menu_navbar a:link {
+        color: #005782 !important;
+        background-color: transparent;
+        font-family: Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+    }
+
+    .subscriber_menu_navbar a:hover {
+        /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
+        background-color: #f90 !important; /*orange*/
+        color: #fff !important; /*white*/
+        border: 1px solid gray !important;
+        border-bottom: 5px solid #808080 !important;
+    }
+
+    .subscriber_menu_navbar li.active a /*, li.nav-item.active*/ {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        color: #005782 !important; /*white*/
+        border-bottom: 5px solid #f90 !important;
+    }
+.subscriber_menu_content_page {
+    background-color: #ccc;
+}
+.subscriber_menu_picture_page {
+    background-color: white;
+}
+.subscriber_form {
+    background-color: #ccc;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: auto;
+    line-height: unset;
+}
+    .subscriber_form label {
+        color: Black !important;
+        background-color: transparent;
+        font-family: 'Segoe UI Light', Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+    .subscriber_form input {
+        color: Black !important;
+        background-color: white;
+        font-family: Inconsolata,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 12px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        max-width: 480px
+    }
+
+    .subscriber_form a:hover {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        background-color: transparent !important; /*orange*/
+        color: #000 !important; /*white*/
+        border-radius: 0px !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        border: 0px solid gray !important;
+        border-bottom: 0px solid #808080 !important;
+    }
+
+    .input_1_perrow {
+        width:480px
+    }
+
+.input_2_perrow {
+    width: 228px
+}
+.input_x3 {
+    width: 145px
+}
+
+.text_notes_black {
+    color: black;
+    font-family: Inconsolata, 'Segoe UI Light', serif;
+    font-size: 10px;
+    font-style: normal;
+    font-style: normal;
+    font-weight: 100;
+}
+    .text_notes_black label {
+        color: blue;
+        font-family: Inconsolata, 'Segoe UI Light', serif;
+        font-size: 10px;
+        font-style: normal;
+        font-style: normal;
+        font-weight: 100;
+    }
+
+    .text_notes_black a:link {
+        color: blue;
+        font-family: Inconsolata, 'Segoe UI Light', serif;
+        font-size: 10px;
+        font-style: normal;
+        font-style: normal;
+        font-weight: 100;
+    }
+
+
+.quote_text {
+    color: Black;
+    background-color: transparent;
+    font-family: 'Segoe UI Light', Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 14px;
+}
+.quote_title {
+    color: Black;
+    background-color: transparent;
+    font-family: Montserrat,'Open Sans',  Inconsolata, serif;
+    font-feature-settings: "liga";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+
+
+    /*
+.dropdown_list {
+    border: 1px solid gray;
+    border-radius: 0px;
+    border-bottom: 5px solid #f90;
+}
+    .dropdown_list a:link {
+        color: #000;
+    }
+    .dropdown_list a:hover {
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        background-color: #f90;
+        border: 1px solid gray;
+        border-radius: 0px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        color: #ffffff;
+    }
+    .dropdown_list > li {
+        color: #005782;
+    }
+*/
+    .top-menu-navbar-search-form {
+    color: black;
+    font-family: Consolas,'Segoe UI Light','Times New Roman', Times, serif;
+    font-size: 10px;
+    font-style: normal;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    vertical-align: middle;
+    height: auto;
+    line-height: normal;
+    border-radius: 3px;
+    max-width: 280px;
+    border-width: 0px;
+    border-style: dotted;
+    border-color: black;
+    border-image: none;
+}
+
+    .top-menu-navbar-search-form.input {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-width: 1px;
+        border-style: none;
+        border-color: black;
+        border-image: none;
+    }
+
+    .top-menu-navbar-search-form.button {
+    }
+
+
+/*
+    ============================================================
+    this code auto activates a drop down list on a dropdown-menu
+    ============================================================
+*/
+.dropdown:hover > .dropdown-menu {
+    display: block !important;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none !important;/*Add this, to prevent clicking dropdown's default click function*/
+}
+
+/*============================================================*/
+.navmenu li ul {
+    border-bottom: 5px solid #f90;
+}
+
+.navmenu ul {
+    background: #fff;
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+    list-style: none;
+}
+
+.navmenu ul, .navmenu > li.open:hover > a, .navmenu > li.open > a:active {
+    border: 1px solid #ccc;
+    border-bottom-color: #fff;
+}
+
+.navmenu ul, .navmenu li {
+    margin: 0;
+    padding: 0;
+}
+
+.readonly_form_field {
+    background-color: #ccc;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    height: auto;
+    line-height: unset;
+}
+
+    .readonly_form_field label {
+        color: Black !important;
+        background-color: transparent;
+        font-family: 'Segoe UI Light', Montserrat,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-bottom: 0px !important;
+    }
+
+    .readonly_form_field input {
+        color: Blue !important;
+        background-color: white;
+        font-family: Inconsolata,'Open Sans', 'Segoe UI Black', Inconsolata, serif;
+        font-feature-settings: "liga";
+        font-style: normal;
+        font-weight: 100;
+        font-size: 14px;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        max-width: 480px
+    }

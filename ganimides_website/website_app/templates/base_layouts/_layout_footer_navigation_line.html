@@ -1,0 +1,9 @@
+<div class="">
+    {% if previous_page %}
+    <a href="{{url_for(previous_page)}}">&laquo;previous</a>
+    {% endif %}
+    <a rel="nofollow" href="#" onclick="window.scrollTo(0,0); return false;">Return To Top &uarr;</a>
+    {% if next_page %}
+    <a href="{{url_for(next_page)}}">next &raquo;</a>
+    {% endif %}
+</div>

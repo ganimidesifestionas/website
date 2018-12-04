@@ -1,0 +1,31 @@
+<div>
+    <nav class="navbar navbar-expand-md bg-light navbar-light" style="padding-top:0px;padding-bottom:0px">
+        <!-- Brand -->
+        <!-- Toggler/collapsibe Button -->
+        <div class="">
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#footerNavBar" aria-controls="footerNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <!-- FOOTER MENU  -->
+        <div id="footerNavBar" class="collapse navbar-collapse justify-content-center">
+            <!--1st LINE-->
+            <div class="row justify-content-center">
+                <div class="col-sm-12 justify-content-center">
+                    <ul class="navbar-nav ml-auto font-weight-light justify-content-center">
+                        <li class="nav-item"><a data-toggle="tooltip" title="search" data-placement="bottom" class="nav-link" href="{{url_for('privacy_policy')}}">Privacy Policy</a></li>
+                        <li class="nav-item"><a data-toggle="tooltip" title="search" data-placement="bottom" class="nav-link" href="{{url_for('terms_and_conditions')}}">Terms and Conditions of Use</a></li>
+                        <li class="nav-item"><a data-toggle="tooltip" title="search" data-placement="bottom" class="nav-link" href="{{url_for('cookies_policy')}}">Cookies Policy</a></li>
+                        <li class="nav-item"><a data-toggle="tooltip" title="search" data-placement="bottom" class="nav-link" href="{{url_for('contact')}}">Contact Info</a></li>
+                    </ul>
+                </div>
+                <!--BREAK LINE-->
+                <div class="w-100 d-none d-md-block justify-content-center"></div>
+                <!--2nd LINE-->
+                <div class="col-sm-12 justify-content-center justify-content-center">
+                    {% include [language_fullpathfile('social_media_menu.html',CURRENT_LANGUAGE,'COMPONENT'), fullpathfile('social_media_menu.html','COMPONENT')] %}
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
