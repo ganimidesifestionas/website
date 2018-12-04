@@ -16,34 +16,33 @@ if MAIL_SERVER=='smtp.yandex.ru':
     os.environ["MAIL_PORT"] = "587"
     os.environ["MAIL_USE_TLS"] = "True"
     os.environ["MAIL_USE_SSL"] = "True"
-    os.environ["MAIL_USERNAME"] = "ganimidis" #without the @yandex.ru
-    os.environ["MAIL_PASSWORD"] = "****"
+    os.environ["MAIL_USERNAME"] = "........" #without the @yandex.ru
+    os.environ["MAIL_PASSWORD"] = "********"
 else:
     # email server google
     os.environ["MAIL_SERVER"] = "smtp.googlemail.com"
     os.environ["MAIL_PORT"] = "465"
     os.environ["MAIL_USE_TLS"] = "False"
     os.environ["MAIL_USE_SSL"] = "True"
-    os.environ["MAIL_USERNAME"] = "ganimidis@gmail.com"
-    os.environ["MAIL_PASSWORD"] = "philea13"
+    os.environ["MAIL_USERNAME"] = "........@gmail.com"
+    os.environ["MAIL_PASSWORD"] = "********"
 
 if EXECUTION_ENVIRONMENT=='pythonanywhere':
-    os.environ["RECAPTCHA_SITE_KEY"] = "6LfEOH4UAAAAAKTQUTNS0CJODZ4DbVFi0cQl1oUn"
-    os.environ["RECAPTCHA_SECRET_KEY"] = "6LfEOH4UAAAAAOUudlGYDGRUdR6w8fqj6ACrFVRw"
+    os.environ["RECAPTCHA_SITE_KEY"] = "..."
+    os.environ["RECAPTCHA_SECRET_KEY"] = "..."
     os.environ["RECAPTCHA_INVISIBLE_SITE_KEY"] = "...."
     os.environ["RECAPTCHA_INVISIBLE_SECRET_KEY"] = "..."
 else:
-    os.environ["RECAPTCHA_SITE_KEY"] = "6LcD3XkUAAAAABAoO2p4WOoBGg6uRyCoVCcGNCFV"
-    os.environ["RECAPTCHA_SECRET_KEY"] = "6LcD3XkUAAAAAHTNpV8RsDN8CybCNEJ0htRddCMq"
-    os.environ["RECAPTCHA_INVISIBLE_SITE_KEY"] = "6LfL2HkUAAAAAF8ot-2aPAHYzHPAAxvLtKI-PyXi"
-    os.environ["RECAPTCHA_INVISIBLE_SECRET_KEY"] = "6LfL2HkUAAAAAIdjgyCwgSaV2hvOS6APpoXot1yw"
+    os.environ["RECAPTCHA_SITE_KEY"] = "..."
+    os.environ["RECAPTCHA_SECRET_KEY"] = "..."
+    os.environ["RECAPTCHA_INVISIBLE_SITE_KEY"] = "..."
+    os.environ["RECAPTCHA_INVISIBLE_SECRET_KEY"] = "..."
 
 ################################################################
 ### Secret key for signing cookies
 ################################################################
-SECRET_KEY = 'p9Bv<3Eid9%$i01'
-SECRET_KEY = os.environ.get('SECRET_KEY') or 'aeiotheosomegasgeometreip9Bv<3Eid9%$i01'
-SECURITY_PASSWORD_SALT = 'aeiotheosomegasgeometreip9Bv<bobbistarr'
+SECRET_KEY = os.environ.get('SECRET_KEY') or '....'
+SECURITY_PASSWORD_SALT = '...'
 ################################################################
 ### database config
 ################################################################
@@ -86,8 +85,8 @@ print('###instance### ###config.py### SQLALCHEMY_DATABASE_URI2=',SQLALCHEMY_DATA
 MAIL_SERVER = os.environ.get('MAIL_SERVER', 'smtp.googlemail.com')
 MAIL_PORT = int(os.environ.get('MAIL_PORT', '587'))
 MAIL_USE_TLS = os.environ.get('MAIL_USE_TLS', 'true').lower() in ['true', 'on', '1']
-MAIL_userName = os.environ.get('MAIL_userName', 'ganimidis@gmail.com')
-MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', 'philea13')
+MAIL_userName = os.environ.get('MAIL_userName', '...@gmail.com')
+MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD', '****')
 
 ## mail settings google
 #MAIL_SERVER = 'smtp.googlemail.com'
